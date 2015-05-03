@@ -1,5 +1,5 @@
 #
-# Copyright 2012 The Android Open Source Project
+# Copyright 2015 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -36,7 +36,31 @@ LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/wifi
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE       := p2p_supplicant.conf
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := $(LOCAL_MODULE)
+LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/wifi
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE       := p2p_supplicant_overlay.conf
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := $(LOCAL_MODULE)
+LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/wifi
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE       := hostapd_default.conf
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := $(LOCAL_MODULE)
+LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/hostapd
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE       := FTM_PowerTable.XML
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := $(LOCAL_MODULE)
