@@ -41,8 +41,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/mixer_paths.xml:system/etc/mixer_paths.xml
 
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/thermald-geehrc.conf:system/etc/thermald.conf
+#PRODUCT_COPY_FILES += \
+#	$(LOCAL_PATH)/thermald-geehrc.conf:system/etc/thermald.conf
 
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/initlogo.rle:root/initlogo.rle888 \
@@ -118,7 +118,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.cm.based.variant=GPROJ \
 	ro.media.enc.jpeg.quality=100 \
 	ro.media.dec.jpeg.memcap=8000000 \
-	ro.media.enc.hprof.vid.bps=8000000
+	ro.media.enc.hprof.vid.bps=8000000 \
+	ro.config.vc_call_vol_steps=10 \
+	ro.config.media_vol_steps=30 \
 	debug.qualcomm.sns.hal=0
 
 ADDITIONAL_DEFAULT_PROPERTIES := \
