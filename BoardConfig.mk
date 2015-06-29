@@ -53,4 +53,4 @@ BOARD_SEPOLICY_DIRS += \
 #TARGET_QCOM_AUDIO_VARIANT := caf
 
 #Asserts
-TARGET_OTA_ASSERT_DEVICE := gee,geeb,geehrc,e975,geehrc_4g_spr,geespr,ls970,geehrc4g,geehrc4g_spr_us,geebus,e970,e973,e971,geeb_att_us
+TARGET_OTA_ASSERT_DEVICE := gee,geeb,geehrc,e975,geehrc_4g_spr,geespr,ls970,geehrc4g,geehrc4g_spr_us,geebus,e970,e973,e971,geeb_att_us,f180,f180s,f180k,f180l
