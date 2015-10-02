@@ -1,0 +1,5 @@
+[gerrit]
+host=review.pac-rom.com
+port=29418
+project=android_device_lge_e975.git
+defaultbranch=pac-5.1
